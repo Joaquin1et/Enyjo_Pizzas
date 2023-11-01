@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginAdministradorController">
+   <children>
+      <HBox prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="sidepane" stylesheets="@../css/stylespizza.css">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-2.0" layoutY="30.0" prefHeight="19.0" prefWidth="200.0" text="INICIAR SESIÓN" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="67.0" layoutY="80.0" text="Usuario" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txt_usuario" layoutX="26.0" layoutY="113.0" />
+                  <Label layoutX="60.0" layoutY="155.0" text="Password" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="txt_password" layoutX="26.0" layoutY="188.0" />
+                  <Label contentDisplay="GRAPHIC_ONLY" layoutX="26.0" layoutY="270.0" text="Label">
+                     <graphic>
+                        <ImageView fitHeight="77.0" fitWidth="114.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/llave.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Garamond" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_LoginAdmin" layoutX="26.0" layoutY="230.0" mnemonicParsing="false" onAction="#btn_LoginAdministrador" prefHeight="29.0" prefWidth="149.0" stylesheets="@../css/stylespizza.css" text="Entrar">
+                     <font>
+                        <Font name="Georgia Bold" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane prefHeight="400.0" prefWidth="400.0">
+               <children>
+                  <Label contentDisplay="GRAPHIC_ONLY" prefHeight="400.0" prefWidth="400.0" text="Label">
+                     <graphic>
+                        <ImageView fitHeight="400.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/portada.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="370.0" prefWidth="626.0" style="-fx-background-image: url(&quot;images/pizarra.jpg&quot;);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EntrantesController">
+   <children>
+      <Pane prefHeight="380.0" prefWidth="636.0">
+         <children>
+            <Label fx:id="lbl_CartaNombre" alignment="CENTER" layoutX="35.0" layoutY="20.0" prefHeight="17.0" prefWidth="245.0" text="Nombre" textFill="WHITE">
+               <font>
+                  <Font name="Georgia Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="33.0" layoutY="50.0" prefHeight="237.0" prefWidth="235.0" text="Label">
+               <graphic>
+                  <ImageView fx:id="Iv_cartaImagen" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/gorropizzero.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="lbl_cartaPrecio" alignment="CENTER" layoutX="128.0" layoutY="315.0" prefHeight="19.0" prefWidth="57.0" text="Precio" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="316.0" layoutY="29.0" prefHeight="22.0" prefWidth="299.0" text="Ingredientes" textFill="WHITE">
+               <font>
+                  <Font name="Georgia Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_CartaIngredientes" alignment="CENTER" layoutX="319.0" layoutY="73.0" prefHeight="269.0" prefWidth="299.0" style="-fx-background-color: #FEBF6A; -fx-background-radius: 8px; -fx-border-radius: 8px; -fx-border-style: solid; -fx-border-width: 3px; -fx-border-color: FEEFB3;" wrapText="true">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </Label>
+            <Label layoutX="180.0" layoutY="315.0" text="€" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

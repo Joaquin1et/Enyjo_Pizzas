@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="contenArea" prefHeight="570.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CartaController">
+   <children>
+      <VBox prefHeight="570.0" prefWidth="826.0">
+         <children>
+            <Pane prefHeight="39.0" prefWidth="826.0" style="-fx-background-color: #296A19;">
+               <children>
+                  <HBox prefHeight="38.0" prefWidth="826.0">
+                     <children>
+                        <Button fx:id="btn_CartaPizzas" alignment="CENTER" mnemonicParsing="false" onAction="#Carta_Pizzas" prefHeight="38.0" prefWidth="201.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px;" text="Pizzas">
+                           <font>
+                              <Font name="Georgia Bold" size="13.0" />
+                           </font></Button>
+                        <Button fx:id="btn_CartaHambur" alignment="CENTER" mnemonicParsing="false" onAction="#Carta_Hamburguesas" prefHeight="38.0" prefWidth="223.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px;" text="Hamburguesas">
+                           <font>
+                              <Font name="Georgia Bold" size="13.0" />
+                           </font></Button>
+                        <Button fx:id="btn_CartaEntrantes" alignment="CENTER" mnemonicParsing="false" onAction="#Carta_entrantes" prefHeight="38.0" prefWidth="198.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px;" text="Entrantes  y Postres">
+                           <font>
+                              <Font name="Georgia Bold" size="13.0" />
+                           </font></Button>
+                        <Button fx:id="btn_CartasBebidas" alignment="CENTER" mnemonicParsing="false" onAction="#Carta_bebida" prefHeight="38.0" prefWidth="204.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px;" text="Bebidas">
+                           <font>
+                              <Font name="Georgia Bold" size="13.0" />
+                           </font></Button>
+                     </children>
+                  </HBox>
+                  <Pane fx:id="areapaneHamburguesa" layoutX="-1.0" layoutY="46.0" prefHeight="523.0" prefWidth="827.0" style="-fx-background-image: url(&quot;images/pizarra.jpg&quot;);">
+                     <children>
+                        <Label alignment="CENTER" layoutX="1.0" layoutY="1.0" prefHeight="38.0" prefWidth="826.0" text="Elige tu Hamburguesa" textFill="#99f344">
+                           <font>
+                              <Font name="Georgia Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Pane fx:id="pane_CartaHambur_1" layoutX="25.0" layoutY="49.0" onMouseClicked="#Ficha_Hambur1" prefHeight="168.0" prefWidth="178.0" style="-fx-background-color: #F8C578; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="BOTTOM" layoutX="23.0" layoutY="35.0" prefHeight="100.0" prefWidth="131.0">
+                                 <graphic>
+                                    <ImageView fx:id="lv_imagenHambur1" fitHeight="100.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/gorropizzero.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font name="Georgia Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lbl_PrecioBurguer1" alignment="CENTER" ellipsisString="hola mundo" layoutX="55.0" layoutY="140.0" prefHeight="15.0" prefWidth="72.0" text="Precio">
+                                 <font>
+                                    <Font name="Cambria Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lbl_nombreCartaHambur1" alignment="CENTER" layoutY="10.0" prefHeight="17.0" prefWidth="183.0" text="Nombre">
+                                 <font>
+                                    <Font name="Georgia Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="113.0" layoutY="142.0" prefHeight="15.0" prefWidth="14.0" text="€">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Pane>
+                        <Pane fx:id="pane_CartaHambur_2" layoutX="225.0" layoutY="49.0" onMouseClicked="#FichaHambur2" prefHeight="168.0" prefWidth="178.0" style="-fx-background-color: #F8C578; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="23.0" layoutY="35.0" prefHeight="100.0" prefWidth="131.0" text="Label">
+                                 <graphic>
+                                    <ImageView fx:id="lv_imagenHambur2" fitHeight="100.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/gorropizzero.png" />
+                                       </image></ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font name="Georgia Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lbl_precioBurger2" alignment="CENTER" layoutX="55.0" layoutY="140.0" prefHeight="15.0" prefWidth="72.0" text="Precio">
+                                 <font>
+                                    <Font name="Cambria Bold" size="16.0" />
+                                 </font></Label>
+                              <Label fx:id="lbl_nombreCartaHambur2" alignment="CENTER" layoutY="10.0" prefHeight="15.0" prefWidth="178.0" text="Nombre">
+                                 <font>
+                                    <Font name="Georgia Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="113.0" layoutY="142.0" prefHeight="15.0" prefWidth="14.0" text="€">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Pane>
+                        <Label layoutX="323.0" layoutY="465.0" text="Colocar frase de publicidad">
+                           <font>
+                              <Font name="Georgia Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <HBox layoutY="-7.0" prefHeight="8.0" prefWidth="836.0" styleClass="redPane" stylesheets="@../css/stylespizza.css" />
+                        <Pane fx:id="pane_CartaHambur_3" layoutX="424.0" layoutY="49.0" onMouseClicked="#FichaHambur3" prefHeight="168.0" prefWidth="178.0" style="-fx-background-color: #F8C578; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="23.0" layoutY="35.0" prefHeight="100.0" prefWidth="131.0" text="Label" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Georgia Bold" size="13.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fx:id="Iv_imagenHambur3" fitHeight="100.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/gorropizzero.png" />
+                                       </image></ImageView>
+                                 </graphic>
+                              </Label>
+                              <Label fx:id="lbl_precioBurger3" alignment="CENTER" layoutX="55.0" layoutY="140.0" prefHeight="15.0" prefWidth="72.0" text="Precio">
+                                 <font>
+                                    <Font name="Cambria Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lbl_nombreCartaHambur3" alignment="CENTER" layoutY="10.0" prefHeight="15.0" prefWidth="178.0" text="Label">
+                                 <font>
+                                    <Font name="Georgia Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="113.0" layoutY="142.0" prefHeight="15.0" prefWidth="14.0" text="€">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Pane>
+                        <Pane fx:id="pane_CartaHambur_4" layoutX="621.0" layoutY="49.0" onMouseClicked="#FichaHambur4" prefHeight="168.0" prefWidth="178.0" style="-fx-background-color: #F8C578; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="23.0" layoutY="35.0" prefHeight="100.0" prefWidth="131.0" text="Label">
+                                 <graphic>
+                                    <ImageView fx:id="Iv_imagenHambur4" fitHeight="100.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/gorropizzero.png" />
+                                       </image></ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font name="Georgia Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lbl_precioBurguer4" alignment="CENTER" layoutX="55.0" layoutY="140.0" prefHeight="15.0" prefWidth="72.0" text="Precio">
+                                 <font>
+                                    <Font name="Cambria Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lbl_nombreCartaHambur4" alignment="CENTER" layoutX="2.0" layoutY="10.0" prefHeight="17.0" prefWidth="178.0" text="Label">
+                                 <font>
+                                    <Font name="Georgia Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="113.0" layoutY="142.0" prefHeight="15.0" prefWidth="14.0" text="€">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Pane>
+                        <Pane fx:id="pane_CartaHambur_5" layoutX="25.0" layoutY="262.0" onMouseClicked="#FichaHambur5" prefHeight="168.0" prefWidth="178.0" style="-fx-background-color: #F8C578; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="23.0" layoutY="35.0" prefHeight="100.0" prefWidth="131.0" text="Label">
+                                 <graphic>
+                                    <ImageView fx:id="Iv_imagenHambur5" fitHeight="100.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/gorropizzero.png" />
+                                       </image></ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font name="Georgia Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lbl_precioBurguer5" alignment="CENTER" layoutX="55.0" layoutY="140.0" prefHeight="15.0" prefWidth="72.0" text="Precio">
+                                 <font>
+                                    <Font name="Cambria Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lbl_nombreCartaHambur5" alignment="CENTER" layoutY="10.0" prefHeight="17.0" prefWidth="178.0" text="Label">
+                                 <font>
+                                    <Font name="Georgia Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="113.0" layoutY="142.0" prefHeight="15.0" prefWidth="14.0" text="€">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Pane>
+                        <Pane fx:id="pane_CartaHambur_6" layoutX="225.0" layoutY="262.0" onMouseClicked="#FichaHambur6" prefHeight="168.0" prefWidth="178.0" style="-fx-background-color: #F8C578; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="23.0" layoutY="35.0" prefHeight="100.0" prefWidth="131.0" text="Label">
+                                 <graphic>
+                                    <ImageView fx:id="Iv_imagenHambur6" fitHeight="100.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/gorropizzero.png" />
+                                       </image></ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font name="Georgia Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lbl_precioBurguer6" alignment="CENTER" layoutX="55.0" layoutY="140.0" prefHeight="15.0" prefWidth="72.0" text="Precio">
+                                 <font>
+                                    <Font name="Cambria Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lbl_nombreCartaHambur6" alignment="CENTER" layoutY="10.0" prefHeight="17.0" prefWidth="178.0" text="Label">
+                                 <font>
+                                    <Font name="Georgia Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="113.0" layoutY="142.0" prefHeight="15.0" prefWidth="14.0" text="€">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Pane>
+                        <Pane fx:id="pane_CartaHambur_7" layoutX="424.0" layoutY="262.0" onMouseClicked="#FichaHambur7" prefHeight="168.0" prefWidth="178.0" style="-fx-background-color: #F8C578; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="23.0" layoutY="35.0" prefHeight="100.0" prefWidth="131.0" text="Label">
+                                 <graphic>
+                                    <ImageView fx:id="Iv_imagenHambur7" fitHeight="100.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/gorropizzero.png" />
+                                       </image></ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font name="Georgia Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lbl_precioBurguer7" alignment="CENTER" layoutX="55.0" layoutY="140.0" prefHeight="15.0" prefWidth="72.0" text="Precio">
+                                 <font>
+                                    <Font name="Cambria Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lbl_nombreCartaHambur7" alignment="CENTER" layoutY="10.0" prefHeight="17.0" prefWidth="178.0" text="Label">
+                                 <font>
+                                    <Font name="Georgia Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="113.0" layoutY="142.0" prefHeight="15.0" prefWidth="14.0" text="€">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Pane>
+                        <Pane fx:id="pane_CartaHambur_8" layoutX="621.0" layoutY="262.0" onMouseClicked="#FichaHambur8" prefHeight="168.0" prefWidth="178.0" style="-fx-background-color: #F8C578; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="23.0" layoutY="35.0" prefHeight="100.0" prefWidth="131.0" text="Label">
+                                 <graphic>
+                                    <ImageView fx:id="Iv_imagenHambur8" fitHeight="100.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/gorropizzero.png" />
+                                       </image></ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font name="Georgia Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lbl_precioBurguer8" alignment="CENTER" layoutX="55.0" layoutY="140.0" prefHeight="15.0" prefWidth="72.0" text="Precio">
+                                 <font>
+                                    <Font name="Cambria Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lbl_nombreCartaHambur8" alignment="CENTER" layoutY="10.0" prefHeight="15.0" prefWidth="178.0" text="Label">
+                                 <font>
+                                    <Font name="Georgia Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="113.0" layoutY="142.0" prefHeight="15.0" prefWidth="14.0" text="€">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Pane>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

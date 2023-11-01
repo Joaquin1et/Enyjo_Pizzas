@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="contenArea" prefHeight="570.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Carta_PizzasController">
+   <children>
+      <VBox prefHeight="570.0" prefWidth="826.0">
+         <children>
+            <Pane prefHeight="39.0" prefWidth="826.0" style="-fx-background-color: #296A19;">
+               <children>
+                  <HBox prefHeight="39.0" prefWidth="826.0">
+                     <children>
+                        <Button fx:id="btn_CartaPizzas" alignment="CENTER" mnemonicParsing="false" onAction="#Carta_Pizzas" prefHeight="38.0" prefWidth="165.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px;" text="Pizzas">
+                           <font>
+                              <Font name="Georgia Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btn_CartaHambur" alignment="CENTER" mnemonicParsing="false" onAction="#Carta_Hamburguesas" prefHeight="38.0" prefWidth="165.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px;" text="Hamburguesas">
+                           <font>
+                              <Font name="Georgia Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btn_CartaEntrantes" alignment="CENTER" mnemonicParsing="false" onAction="#Carta_Entrantes" prefHeight="38.0" prefWidth="165.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px;" text="Entrantes y Postres">
+                           <font>
+                              <Font name="Georgia Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btn_CartasBebidas" alignment="CENTER" mnemonicParsing="false" onAction="#Carta_Bebidas" prefHeight="38.0" prefWidth="165.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px;" text="Bebidas">
+                           <font>
+                              <Font name="Georgia Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btn_CartaExtras" alignment="CENTER" mnemonicParsing="false" onAction="#CartaExtras" prefHeight="38.0" prefWidth="165.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px;" text="Extras">
+                           <font>
+                              <Font name="Georgia Bold" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+            <HBox prefHeight="8.0" prefWidth="836.0" styleClass="redPane" stylesheets="@../css/stylespizza.css" />
+            <Pane layoutX="25.0" layoutY="49.0" prefHeight="526.0" prefWidth="826.0" style="-fx-background-image: url(&quot;images/pizarra.jpg&quot;);">
+               <children>
+                  <Pane fx:id="pane_CartaPizza_2" layoutX="225.0" layoutY="49.0" onMouseClicked="#Ficha_Pizza_2" prefHeight="168.0" prefWidth="178.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px; -fx-background-color: #F8C578;">
+                     <children>
+                        <Label fx:id="lbl_nombrePizza2" alignment="CENTER" layoutY="10.0" prefHeight="17.0" prefWidth="183.0" text="Nombre">
+                           <font>
+                              <Font name="Georgia Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="23.0" layoutY="35.0" prefHeight="100.0" prefWidth="131.0" text="Label">
+                           <graphic>
+                              <ImageView fx:id="Iv_imagenPizza2" fitHeight="100.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/gorropizzero.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                        <Label fx:id="lbl_precioPizza2" alignment="CENTER" layoutX="55.0" layoutY="140.0" prefHeight="15.0" prefWidth="72.0" text="Precio">
+                           <font>
+                              <Font name="Cambria Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="113.0" layoutY="142.0" prefHeight="15.0" prefWidth="14.0" text="€">
+                           <font>
+                              <Font name="Arial Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane fx:id="pane_CartaPizza_3" layoutX="424.0" layoutY="49.0" onMouseClicked="#Ficha_Pizza_3" prefHeight="168.0" prefWidth="178.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px; -fx-background-color: #F8C578;">
+                     <children>
+                        <Label fx:id="lbl_nombrePizza3" alignment="CENTER" layoutY="10.0" prefHeight="17.0" prefWidth="183.0" text="Nombre">
+                           <font>
+                              <Font name="Georgia Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="23.0" layoutY="35.0" prefHeight="100.0" prefWidth="131.0" text="Label">
+                           <graphic>
+                              <ImageView fx:id="Iv_imagenPizza3" fitHeight="100.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/gorropizzero.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                        <Label fx:id="lbl_precioPizza3" alignment="CENTER" layoutX="55.0" layoutY="140.0" prefHeight="15.0" prefWidth="72.0" text="Precio">
+                           <font>
+                              <Font name="Cambria Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="113.0" layoutY="142.0" prefHeight="15.0" prefWidth="14.0" text="€">
+                           <font>
+                              <Font name="Arial Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane fx:id="pane_CartaPizza_4" layoutX="621.0" layoutY="49.0" onMouseClicked="#Ficha_Pizza_4" prefHeight="168.0" prefWidth="178.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px; -fx-background-color: #F8C578;">
+                     <children>
+                        <Label fx:id="lbl_nombrePizza4" alignment="CENTER" layoutY="10.0" prefHeight="17.0" prefWidth="183.0" text="Nombre">
+                           <font>
+                              <Font name="Georgia Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="23.0" layoutY="35.0" prefHeight="100.0" prefWidth="131.0" text="Label">
+                           <graphic>
+                              <ImageView fx:id="Iv_imagenPizza4" fitHeight="100.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/gorropizzero.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                        <Label fx:id="lbl_precioPizza4" alignment="CENTER" layoutX="55.0" layoutY="140.0" prefHeight="15.0" prefWidth="72.0" text="Precio">
+                           <font>
+                              <Font name="Cambria Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="113.0" layoutY="142.0" prefHeight="15.0" prefWidth="14.0" text="€">
+                           <font>
+                              <Font name="Arial Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane fx:id="pane_CartaPizza_5" layoutX="25.0" layoutY="260.0" onMouseClicked="#Ficha_Pizza_5" prefHeight="168.0" prefWidth="178.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px; -fx-background-color: #F8C578;">
+                     <children>
+                        <Label fx:id="lbl_nombrePizza5" alignment="CENTER" layoutY="10.0" prefHeight="17.0" prefWidth="183.0" text="Nombre">
+                           <font>
+                              <Font name="Georgia Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="23.0" layoutY="35.0" prefHeight="100.0" prefWidth="131.0" text="Label">
+                           <graphic>
+                              <ImageView fx:id="Iv_imagenPizza5" fitHeight="100.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/gorropizzero.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                        <Label fx:id="lbl_precioPizza5" alignment="CENTER" layoutX="55.0" layoutY="140.0" prefHeight="15.0" prefWidth="72.0" text="Precio">
+                           <font>
+                              <Font name="Cambria Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="113.0" layoutY="142.0" prefHeight="15.0" prefWidth="14.0" text="€">
+                           <font>
+                              <Font name="Arial Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane fx:id="pane_CartaPizza_6" layoutX="225.0" layoutY="260.0" onMouseClicked="#Ficha_Pizza_6" prefHeight="168.0" prefWidth="178.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px; -fx-background-color: #F8C578;">
+                     <children>
+                        <Label fx:id="lbl_nombrePizza6" alignment="CENTER" layoutY="10.0" prefHeight="17.0" prefWidth="183.0" text="Nombre">
+                           <font>
+                              <Font name="Georgia Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="23.0" layoutY="35.0" prefHeight="100.0" prefWidth="131.0" text="Label">
+                           <graphic>
+                              <ImageView fx:id="Iv_imagenPizza6" fitHeight="100.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/gorropizzero.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                        <Label fx:id="lbl_precioPizza6" alignment="CENTER" layoutX="55.0" layoutY="140.0" prefHeight="15.0" prefWidth="72.0" text="Precio">
+                           <font>
+                              <Font name="Cambria Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="113.0" layoutY="142.0" prefHeight="15.0" prefWidth="14.0" text="€">
+                           <font>
+                              <Font name="Arial Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane fx:id="pane_CartaPizza_7" layoutX="424.0" layoutY="260.0" onMouseClicked="#Ficha_Pizza_7" prefHeight="168.0" prefWidth="178.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px; -fx-background-color: #F8C578;">
+                     <children>
+                        <Label fx:id="lbl_nombrePizza7" alignment="CENTER" layoutY="10.0" prefHeight="17.0" prefWidth="183.0" text="Nombre">
+                           <font>
+                              <Font name="Georgia Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="23.0" layoutY="35.0" prefHeight="100.0" prefWidth="131.0" text="Label">
+                           <graphic>
+                              <ImageView fx:id="Iv_imagenPizza7" fitHeight="100.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/gorropizzero.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                        <Label fx:id="lbl_precioPizza7" alignment="CENTER" layoutX="55.0" layoutY="140.0" prefHeight="15.0" prefWidth="72.0" text="Precio">
+                           <font>
+                              <Font name="Cambria Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="113.0" layoutY="142.0" prefHeight="15.0" prefWidth="14.0" text="€">
+                           <font>
+                              <Font name="Arial Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane fx:id="pane_CartaPizza_8" layoutX="621.0" layoutY="260.0" onMouseClicked="#Ficha_Pizza_8" prefHeight="168.0" prefWidth="178.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px; -fx-background-color: #F8C578;">
+                     <children>
+                        <Label fx:id="lbl_nombrePizza8" alignment="CENTER" layoutY="10.0" prefHeight="17.0" prefWidth="183.0" text="Nombre">
+                           <font>
+                              <Font name="Georgia Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="23.0" layoutY="35.0" prefHeight="100.0" prefWidth="131.0" text="Label">
+                           <graphic>
+                              <ImageView fx:id="Iv_imagenPizza8" fitHeight="100.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/gorropizzero.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                        <Label fx:id="lbl_precioPizza8" alignment="CENTER" layoutX="55.0" layoutY="140.0" prefHeight="15.0" prefWidth="72.0" text="Precio">
+                           <font>
+                              <Font name="Cambria Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="113.0" layoutY="142.0" prefHeight="15.0" prefWidth="14.0" text="€">
+                           <font>
+                              <Font name="Arial Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane fx:id="pane_CartaPizza_1" layoutX="25.0" layoutY="49.0" onMouseClicked="#Ficha_Pizza_1" prefHeight="168.0" prefWidth="178.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px; -fx-background-color: #F8C578;">
+                     <children>
+                        <Label fx:id="lbl_nombrePizza1" alignment="CENTER" layoutY="10.0" prefHeight="17.0" prefWidth="183.0" text="Nombre">
+                           <font>
+                              <Font name="Georgia Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="23.0" layoutY="35.0" prefHeight="100.0" prefWidth="131.0" text="Label">
+                           <graphic>
+                              <ImageView fx:id="Iv_imagenPizza1" fitHeight="100.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/gorropizzero.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                        <Label fx:id="lbl_precioPizza1" alignment="CENTER" layoutX="55.0" layoutY="140.0" prefHeight="15.0" prefWidth="72.0" text="Precio">
+                           <font>
+                              <Font name="Cambria Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="113.0" layoutY="142.0" prefHeight="15.0" prefWidth="14.0" text="€">
+                           <font>
+                              <Font name="Arial Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Label alignment="CENTER" layoutY="450.0" prefHeight="19.0" prefWidth="826.0" text="Escribir publicicdad">
+                     <font>
+                        <Font name="Georgia Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="40.0" prefWidth="826.0" text="Elige tu Pizza" textFill="#99f344">
+                     <font>
+                        <Font name="Georgia Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

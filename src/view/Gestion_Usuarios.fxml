@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="826.0" style="-fx-background-image: url(&quot;images/fondo.jpg&quot;);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Gestion_UsuariosController">
+   <children>
+      <Label alignment="CENTER" layoutY="29.0" prefWidth="826.0" text="GESTIÓN DE USUARIOS" textFill="WHITE">
+         <font>
+            <Font name="Georgia Bold" size="18.0" />
+         </font>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </Label>
+      <HBox alignment="CENTER" layoutX="215.0" layoutY="94.0" prefHeight="301.0" prefWidth="397.0">
+         <children>
+            <TableView fx:id="tblv_Ges_Claves" onMouseClicked="#Ficha_Claves_Usuario" prefHeight="250.0" prefWidth="415.0">
+              <columns>
+                <TableColumn fx:id="tblc_nombre" prefWidth="215.0" text="Nombre" />
+                <TableColumn fx:id="tblc_password" prefWidth="187.0" text="Password" />
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+      <Label alignment="CENTER" layoutY="475.0" prefHeight="17.0" prefWidth="826.0" text="Creado por J. Martín de ENYJO SYSTEM" textFill="WHITE" />
+      <Label contentDisplay="GRAPHIC_ONLY" layoutX="35.0" layoutY="29.0" prefHeight="103.0" prefWidth="126.0" text="Label">
+         <graphic>
+            <ImageView fitHeight="143.0" fitWidth="167.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/escudo.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label contentDisplay="GRAPHIC_ONLY" layoutX="643.0" layoutY="142.0" prefHeight="253.0" prefWidth="155.0" text="Label">
+         <graphic>
+            <ImageView fitHeight="252.0" fitWidth="158.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/guardia.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+   </children>
+</Pane>

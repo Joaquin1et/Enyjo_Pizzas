@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="370.0" prefWidth="626.0" style="-fx-background-image: url(&quot;images/pizarra.jpg&quot;);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HamburguesasController">
+   <children>
+      <Pane prefHeight="370.0" prefWidth="626.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="33.0" layoutY="50.0" prefHeight="237.0" prefWidth="235.0">
+               <graphic>
+                  <ImageView fx:id="Iv_cataImagen" fitHeight="245.0" fitWidth="248.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../hamburguesas/clasica.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Garamond Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="316.0" layoutY="29.0" prefHeight="22.0" prefWidth="299.0" text="Ingredientes" textFill="WHITE">
+               <font>
+                  <Font name="Garamond Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_cartaIngredientes" alignment="CENTER" layoutX="319.0" layoutY="73.0" prefHeight="269.0" prefWidth="299.0" style="-fx-background-color: #FEBF6A; -fx-background-radius: 8px; -fx-border-radius: 8px; -fx-border-style: solid; -fx-border-width: 3px; -fx-border-color: FEEFB3;" stylesheets="@../css/stylespizza.css" wrapText="true">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </Label>
+            <Label fx:id="lbl_cartaPrecio" alignment="CENTER" layoutX="128.0" layoutY="315.0" prefHeight="19.0" prefWidth="57.0" text="Precio" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_cartaNombre" alignment="CENTER" layoutX="34.0" layoutY="20.0" prefHeight="17.0" prefWidth="245.0" textFill="WHITE">
+               <font>
+                  <Font name="Georgia Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="180.0" layoutY="315.0" text="€" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

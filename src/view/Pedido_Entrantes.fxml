@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="383.0" prefWidth="1132.0" style="-fx-background-color: #FEBF6A; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-width: 2px; -fx-border-color: FEEFB3;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Pedido_EntrantesController">
+   <children>
+      <Label alignment="CENTER" layoutX="5.0" layoutY="8.0" prefHeight="16.0" prefWidth="1123.0" text="HACER PEDIDO">
+         <font>
+            <Font name="Georgia Bold" size="14.0" />
+         </font>
+      </Label>
+      <Pane layoutX="50.0" layoutY="32.0" prefHeight="160.0" prefWidth="185.0" style="-fx-background-color: #ffd194; -fx-border-color: FEEFB3; -fx-border-width: 2px; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+         <children>
+            <Label fx:id="lbl_pedidoNom_E1" alignment="CENTER" layoutY="10.0" prefHeight="15.0" prefWidth="185.0" text="Nombre">
+               <font>
+                  <Font name="Georgia Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="GRAPHIC_ONLY" layoutX="40.0" layoutY="30.0" prefHeight="79.0" prefWidth="81.0" text="Label">
+               <graphic>
+                  <ImageView fx:id="Iv_pedido_E1" fitHeight="97.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/nuggetpostres.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="lbl_pedidoPrecio_E1" layoutX="70.0" layoutY="130.0" prefHeight="16.0" prefWidth="33.0" text="Precio">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+            <CheckBox layoutX="15.0" layoutY="135.0" mnemonicParsing="false" />
+            <Spinner fx:id="spi_Entrantes_1" layoutX="128.0" layoutY="130.0" prefHeight="25.0" prefWidth="52.0" />
+            <Label layoutX="144.0" layoutY="114.0" text="Cant.">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="105.0" layoutY="130.0" text="€">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="275.0" layoutY="32.0" prefHeight="160.0" prefWidth="185.0" style="-fx-background-color: #ffd194; -fx-border-color: FEEFB3; -fx-border-width: 2px; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+         <children>
+            <Label fx:id="lbl_pedidoNom_E2" alignment="CENTER" layoutY="10.0" prefHeight="15.0" prefWidth="185.0" text="Nombre">
+               <font>
+                  <Font name="Georgia Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="GRAPHIC_ONLY" layoutX="40.0" layoutY="30.0" prefHeight="79.0" prefWidth="81.0" text="Label">
+               <graphic>
+                  <ImageView fx:id="Iv_pedido_E2" fitHeight="97.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logo300x300.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="lbl_pedidoPrecio_E2" layoutX="70.0" layoutY="130.0" prefHeight="16.0" prefWidth="33.0" text="Precio">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+            <CheckBox layoutX="15.0" layoutY="135.0" mnemonicParsing="false" />
+            <Spinner fx:id="spi_Entrantes_2" layoutX="128.0" layoutY="130.0" prefHeight="25.0" prefWidth="51.0" />
+            <Label layoutX="144.0" layoutY="114.0" text="Cant.">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="105.0" layoutY="130.0" text="€">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="500.0" layoutY="32.0" prefHeight="160.0" prefWidth="185.0" style="-fx-background-color: #ffd194; -fx-border-color: FEEFB3; -fx-border-width: 2px; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+         <children>
+            <Label fx:id="lbl_pedidoNom_E3" alignment="CENTER" layoutY="10.0" prefHeight="15.0" prefWidth="185.0" text="Nombre">
+               <font>
+                  <Font name="Georgia Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="GRAPHIC_ONLY" layoutX="40.0" layoutY="30.0" prefHeight="79.0" prefWidth="81.0" text="Label">
+               <graphic>
+                  <ImageView fx:id="Iv_pedido_E3" fitHeight="97.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logo300x300.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="lbl_pedidoPrecio_E3" layoutX="70.0" layoutY="130.0" prefHeight="16.0" prefWidth="33.0" text="Precio">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+            <CheckBox layoutX="15.0" layoutY="135.0" mnemonicParsing="false" />
+            <Spinner fx:id="spi_Entrantes_3" layoutX="128.0" layoutY="130.0" prefHeight="25.0" prefWidth="51.0" />
+            <Label layoutX="144.0" layoutY="114.0" text="Cant.">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="105.0" layoutY="130.0" text="€">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="725.0" layoutY="32.0" prefHeight="160.0" prefWidth="185.0" style="-fx-background-color: #ffd194; -fx-border-color: FEEFB3; -fx-border-width: 2px; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+         <children>
+            <Label fx:id="lbl_pedidoNom_E4" alignment="CENTER" layoutY="10.0" prefHeight="15.0" prefWidth="185.0" text="Nombre">
+               <font>
+                  <Font name="Georgia Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="GRAPHIC_ONLY" layoutX="40.0" layoutY="30.0" prefHeight="79.0" prefWidth="81.0" text="Label">
+               <graphic>
+                  <ImageView fx:id="Iv_pedido_E4" fitHeight="97.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logo300x300.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="lbl_pedidoPrecio_E4" layoutX="70.0" layoutY="130.0" prefHeight="16.0" prefWidth="33.0" text="Precio">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+            <CheckBox layoutX="15.0" layoutY="135.0" mnemonicParsing="false" />
+            <Spinner fx:id="spi_Entrantes_4" layoutX="128.0" layoutY="130.0" prefHeight="25.0" prefWidth="51.0" />
+            <Label layoutX="144.0" layoutY="114.0" text="Cant.">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="105.0" layoutY="130.0" text="€">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="50.0" layoutY="209.0" prefHeight="160.0" prefWidth="185.0" style="-fx-background-color: #ffd194; -fx-border-color: FEEFB3; -fx-border-width: 2px; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+         <children>
+            <Label fx:id="lbl_pedidoNom_E5" alignment="CENTER" layoutY="10.0" prefHeight="15.0" prefWidth="185.0" text="Nombre">
+               <font>
+                  <Font name="Georgia Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="GRAPHIC_ONLY" layoutX="40.0" layoutY="30.0" prefHeight="79.0" prefWidth="81.0" text="Label">
+               <graphic>
+                  <ImageView fx:id="Iv_pedido_E5" fitHeight="97.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logo300x300.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="lbl_pedidoPrecio_E5" layoutX="70.0" layoutY="130.0" prefHeight="16.0" prefWidth="33.0" text="Precio">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+            <CheckBox layoutX="15.0" layoutY="135.0" mnemonicParsing="false" />
+            <Spinner fx:id="spi_Entrantes_5" layoutX="128.0" layoutY="130.0" prefHeight="25.0" prefWidth="51.0" />
+            <Label layoutX="144.0" layoutY="114.0" text="Cant.">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="105.0" layoutY="130.0" text="€">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="275.0" layoutY="209.0" prefHeight="160.0" prefWidth="185.0" style="-fx-background-color: #ffd194; -fx-border-color: FEEFB3; -fx-border-width: 2px; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+         <children>
+            <Label fx:id="lbl_pedidoNom_E6" alignment="CENTER" layoutY="10.0" prefHeight="15.0" prefWidth="185.0" text="Nombre">
+               <font>
+                  <Font name="Georgia Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="GRAPHIC_ONLY" layoutX="40.0" layoutY="30.0" prefHeight="79.0" prefWidth="81.0" text="Label">
+               <graphic>
+                  <ImageView fx:id="Iv_pedido_E6" fitHeight="97.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logo300x300.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="lbl_pedidoPrecio_E6" layoutX="70.0" layoutY="130.0" prefHeight="16.0" prefWidth="33.0" text="Precio">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+            <CheckBox layoutX="15.0" layoutY="135.0" mnemonicParsing="false" />
+            <Spinner fx:id="spi_Entrantes_6" layoutX="128.0" layoutY="130.0" prefHeight="25.0" prefWidth="51.0" />
+            <Label layoutX="144.0" layoutY="114.0" text="Cant.">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="105.0" layoutY="130.0" text="€">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="500.0" layoutY="209.0" prefHeight="160.0" prefWidth="185.0" style="-fx-background-color: #ffd194; -fx-border-color: FEEFB3; -fx-border-width: 2px; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+         <children>
+            <Label fx:id="lbl_pedidoNom_E7" alignment="CENTER" layoutY="10.0" prefHeight="15.0" prefWidth="185.0" text="Nombre">
+               <font>
+                  <Font name="Georgia Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="GRAPHIC_ONLY" layoutX="40.0" layoutY="30.0" prefHeight="79.0" prefWidth="81.0" text="Label">
+               <graphic>
+                  <ImageView fx:id="Iv_pedido_E7" fitHeight="97.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logo300x300.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="lbl_pedidoPrecio_E7" layoutX="70.0" layoutY="130.0" prefHeight="16.0" prefWidth="33.0" text="Precio">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+            <CheckBox layoutX="15.0" layoutY="135.0" mnemonicParsing="false" />
+            <Spinner fx:id="spi_Entrantes_7" layoutX="128.0" layoutY="130.0" prefHeight="25.0" prefWidth="51.0" />
+            <Label layoutX="144.0" layoutY="114.0" text="Cant.">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="105.0" layoutY="130.0" text="€">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="725.0" layoutY="209.0" prefHeight="160.0" prefWidth="185.0" style="-fx-background-color: #ffd194; -fx-border-color: FEEFB3; -fx-border-width: 2px; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+         <children>
+            <Label fx:id="lbl_pedidoNom_E8" alignment="CENTER" layoutY="10.0" prefHeight="15.0" prefWidth="185.0" text="Nombre">
+               <font>
+                  <Font name="Georgia Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="GRAPHIC_ONLY" layoutX="40.0" layoutY="30.0" prefHeight="79.0" prefWidth="81.0" text="Label">
+               <graphic>
+                  <ImageView fx:id="Iv_pedido_E8" fitHeight="97.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logo300x300.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="lbl_pedidoPrecio_E8" layoutX="70.0" layoutY="130.0" prefHeight="16.0" prefWidth="33.0" text="Precio">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+            <CheckBox layoutX="15.0" layoutY="135.0" mnemonicParsing="false" />
+            <Spinner fx:id="spi_Entrantes_8" layoutX="128.0" layoutY="130.0" prefHeight="25.0" prefWidth="51.0" />
+            <Label layoutX="144.0" layoutY="114.0" text="Cant.">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="105.0" layoutY="130.0" text="€">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="960.0" layoutY="330.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0" style="-fx-background-radius: 8px; -fx-border-radius: 8px;" text="Siguiente &gt;">
+         <font>
+            <Font name="Georgia Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label contentDisplay="GRAPHIC_ONLY" layoutX="948.0" layoutY="62.0" prefHeight="227.0" prefWidth="147.0" text="Label">
+         <graphic>
+            <ImageView fitHeight="238.0" fitWidth="163.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/menu.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+   </children>
+</AnchorPane>
